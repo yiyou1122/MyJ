@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>熊海军的个人作品</title>
+    <link rel="stylesheet" href="css/font-awesome.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div id="dowebok">
+        <div class="section first">
+            <!--第一屏 个人基础信息 -->
+            <div class="bg-first">
+                <div class="container">
+                    <div class="mei-right">
+                        <span></span>
+                    </div>
+                    <div class="baidu">
+                        <!-- logo-->
+                        <div class="logo-drop">
+                            <div class="baidu-logo">
+                                <img src="img/langya.png" alt=""/>
+                            </div>
+                        </div>
+                        <!-- input盒子-->
+                        <div class="input">
+                            <div class="input-light ">
+                                <input class="titleShow" type="search" />
+                                <input type="button" value="琅琊一下"/>
+                                <div class="search-line search-line-top"></div>
+                                <div class="search-line search-line-left"></div>
+                                <div class="search-line search-line-bottom"></div>
+                                <!--<span class="icon-fighter-jet"></span>-->
+                            </div>
+                            <div class="input-result">
+                                <div class="article">
+                                    <img class="fr" src="img/mask/man-first1.png" alt=""/>
+                                    <a style="font-size: 16px;" href="#"> <span>琅琊榜首</span> 熊海军</a> 
+                                    <br/>
+                                    作者基本信息: <br/>
+                                    <!-- <span>熊海军</span> <br/> -->
+                                    年龄： 25 岁 <br/>
+                                    民族： 汉族 <br/>
+                                    籍贯： 黑龙江  绥化市  <br/>
+                                    前端开发：2年 <br>
+                                    现居住地：北京  <br/>
+                                    <span>联系电话：131-2697-0903</span>   <br/>
+                                    <span>电子邮件：xhj_webq@163.com</span>   <br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul id="menu">
+                        <li data-menuanchor="page1" ><a href="#page1" class="iconfont-menu-me" title="基本信息"></a></li>
+                        <li data-menuanchor="page2"><a href="#page2"  class="iconfont-menu-get" title="技能"></a></li>
+                        <li data-menuanchor="page3"><a href="#page3"  class="icon-laptop" title="作品展示"></a></li>
+                        <li data-menuanchor="page4"><a href="#page4"  class="iconfont-menu-works" title="阅历"></a></li>
+                        <li data-menuanchor="page5"><a href="#page5" class="icon-heart" title="爱好"></a></li>
+                        <li data-menuanchor="page6"><a href="#page6" class="icon-envelope-alt" title="联系我"></a></li>
+                        <li>
+                            <a href="#" class="iconfont-menu-music">
+                                <audio class="play"  loop>
+                                    <source src="lib/music/xiaoyaotan.mp3"/>
+                                </audio>
+                            </a>
+
+                        </li>
+                        <script>
+                            var play = document.querySelector("#menu li:nth-child(7) a");
+                            var audio = document.querySelector("#menu audio");
+                            audio.play();
+                            //console.log(audio.play());
+                            play.onclick = function () {
+                                if(audio.className=="play") {
+                                    audio.pause();
+                                    audio.className = "pause";
+                                }
+                                if(audio.className=="pause"){
+                                    audio.play();
+                                    audio.className = "play";
+                                }
+                            }
+                        </script>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section second">
+            <!--第二屏-->
+            <div class="container">
+                <div class="fly-storen">
+                    <div class="get-item">
+                        <i class="get-data3">技能98%</i>
+                        <p><span>H5&C3</span></p>
+                    </div>
+                    <div class="get-item">
+                        <i class="get-data1">技能95%</i>
+                        <p> <span>jQuery</span></p>
+                    </div>
+                    <div class="get-item">
+                        <i class="get-data2">技能96%</i>
+                        <p> <span>Ajax</span></p>
+                    </div>
+                    <div class="get-item">
+                        <i class="get-data4">技能97%</i>
+                        <p> <span>Vue</span></p>
+                    </div>
+                    <div class="get-item">
+                        <i class="get-data5">技能98%</i>
+                        <p> <span>Bootstrap</span></p>
+                    </div>
+
+                </div>
+                <ul class="item-litle">
+                    <li><img class="fly-man" src="img/man-03.png" alt=""/></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section third">
+            <!-- 第三屏-->
+            <!-- -->
+            <h5>
+                <span></span>
+                <span>项目展示</span>
+                <span>药房网</span>
+                <span>健康商城</span>
+                <span>微金所</span>
+                <span>山海奇谈</span>
+                <span>剑侠DEMO</span>
+            </h5>
+            <div class="third-show">
+                <img src="img/third/yf1.png" alt=""/>
+                <img src="img/third/yf2.png" alt=""/>
+                <img src="img/third/wjs-pc.png" alt=""/>
+                <img src="img/third/nd2.png" alt=""/>
+                <img src="img/third/zs-02.png" alt=""/>
+            </div>
+            <div class="third-mask">  </div>
+        </div>
+
+        <div class="section fourth">
+            <!-- 第四屏 个人工作、教育经历-->
+            <div class="container">
+                <span class="flyTao-left"><img src="img/taof-left.png" alt=""/></span>
+                <span class="flyTao-right"><img src="img/tao-right.png" alt=""/> </span>
+                <em><img src="img/mask/man-fourth.png" alt=""/></em>
+                <div class="flowers">
+                    <div></div>
+                    <div></div>
+                </div>
+                <!-- 教育经历 工作经历-->
+                <div class="items">
+                    <div class="item-workf">
+                        <h4>成长教育经历</h4>
+                        <p>
+                            琅琊榜首，江左梅郎，天下第一大帮江左盟宗主，
+                            真实身份为赤焰军少帅林殊，才华无双，文武双全，
+                            是金陵帝都最耀眼最明亮的少年。后因梅岭惨案，
+                            身中火寒之毒，经削皮挫骨的彻底解毒，音容大改、
+                            改名换面，蛰伏江湖，以待时变。虽缠绵病体，
+                            但容颜灵秀，气质清雅，心怀赤子，精通音律，
+                            才冠绝伦，蝉居琅琊公子榜榜首。
+                        </p>
+                    </div>
+                    <div class="item-study">
+                        <h4>成长教育经历</h4>
+                        <p>
+                            琅琊榜首，江左梅郎，天下第一大帮江左盟宗主，
+                            真实身份为赤焰军少帅林殊，才华无双，文武双全，
+                            是金陵帝都最耀眼最明亮的少年。后因梅岭惨案，
+                            身中火寒之毒，经削皮挫骨的彻底解毒，音容大改、
+                            改名换面，蛰伏江湖，以待时变。虽缠绵病体，
+                            但容颜灵秀，气质清雅，心怀赤子，精通音律，
+                            才冠绝伦，蝉居琅琊公子榜榜首。
+                        </p>
+                    </div>
+                    <div class="item-works">
+                        <h4>成长教育经历</h4>
+                        <p>
+                            琅琊榜首，江左梅郎，天下第一大帮江左盟宗主，
+                            真实身份为赤焰军少帅林殊，才华无双，文武双全，
+                            是金陵帝都最耀眼最明亮的少年。后因梅岭惨案，
+                            身中火寒之毒，经削皮挫骨的彻底解毒，音容大改、
+                            改名换面，蛰伏江湖，以待时变。虽缠绵病体，
+                            但容颜灵秀，气质清雅，心怀赤子，精通音律，
+                            才冠绝伦，蝉居琅琊公子榜榜首。
+                        </p>
+                    </div>
+                </div>
+                <i></i>
+
+            </div>
+        </div>
+
+        <div class="section fifth">
+            <!-- 兴趣爱好-->
+            <div class="run-ul">
+                <ul>
+                    <li><img src="img/fifth/img-01.jpg" alt=""/></li>
+                    <li><img src="img/fifth/img-02.jpg" alt=""/></li>
+                    <li><img src="img/fifth/img-03.jpg" alt=""/></li>
+                    <li><img src="img/fifth/img-04.jpg" alt=""/></li>
+                    <li><img src="img/fifth/img-05.jpg" alt=""/></li>
+                </ul>
+            </div>
+            <div class="fifth-mask">  </div>
+        </div>
+        
+        <div class="section sixth">
+            <img src="img/man-feiliu.png" alt=""/>
+            <img src="img/man-li.png" alt=""/>
+            <span>飞流，别闹，<br/>
+                宗主简历看完了！
+            </span>
+            <span>
+                <br>
+                噢！<br/>
+                请联系宗主！<br/>
+                131-2697-0903 <br/>
+            </span>
+            <div class="sixth-mask">  </div>
+        </div>
+    </div>
+    <script>
+        //鼠标进入 切换图片
+        document.querySelector(".first .article").onmouseover = function () {
+            document.querySelector(".first .article img").src = "img/xhj.jpg";
+        }
+        document.querySelector(".first .article").onmouseout = function () {
+            document.querySelector(".first .article img").src = "img/mask/man-first1.png";
+        }
+    </script>
+    <script>
+        $(function () {
+            //插件初始化
+            var json = {
+                //1 样式初始化
+                sectionsColor:["#fff","#2C2C2C","#303030","lightseagreen","#f1f1f1","#fff"],
+                //2 滑动触动动画
+                afterLoad: function (link, index) {
+                    //排他
+
+                    $(".section").removeClass("current");
+                    //li标签 排他
+                    $("#menu a ").removeClass("turnred");
+                    setTimeout(function () {
+                        $(".section").eq(index-1).addClass("current");
+                        //当前a添加样式
+                        $("#menu .active a").addClass("turnred");
+                    },100);
+                    var baidu = $(".first .baidu");
+                    if(index==1) {
+                        setTimeout(function () {
+                            titleShow(baidu,"前端小牛，来一头！");
+                        },1500);
+                    }else{
+                        baidu.find(".titleShow").val("");
+                    }
+
+                },
+                //3 添加导航条
+                anchors: ['page1', 'page2', 'page3', 'page4', 'page5','page6'],
+                menu: '#menu'
+            }
+
+            $("#dowebok").fullpage(json);
+
+        });
+
+
+
+    </script>
+
+</body>
+</html>
